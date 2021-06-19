@@ -70,4 +70,16 @@ class TaxonomyTest extends TestCase
 
         $this->post('/tags',[])->assertSessionHasErrors('description');
     }*/
+
+    /**
+     * Checking for taxonomy created by its id
+     */
+
+    public function test_is_taxonomy_created_and_accessible(){
+        $this->withExceptionHandling();
+        $taxonomy = Taxonomy::factory()->create();
+        $this->get('/tags/'.$taxonomy->id)
+            ->assertSee($taxonomy['title'])
+            ->assertSee($taxonomy['description']);
+    }
 }

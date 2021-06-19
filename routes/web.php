@@ -33,7 +33,7 @@ Route::get('/tags', function (Request $request) {
     $taxonomies =  Taxonomy::all();
     return view('index',$taxonomies);
 });*/
-
+Route::get('/tags/{taxonomy}',[TaxonomyController::class, 'show']);
 Route::get('/tags',[TaxonomyController::class, 'index']);
 
 Route::post('/tags', [TaxonomyController::class, 'store']);

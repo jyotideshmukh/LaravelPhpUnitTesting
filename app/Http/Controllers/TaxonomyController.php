@@ -14,6 +14,11 @@ class TaxonomyController extends Controller
         return view('index',['taxonomies'=>$taxonomies]);
     }
 
+    public function show(Taxonomy $taxonomy){
+        $taxonomy =  Taxonomy::findOrFail();
+        return view('show',['taxonomy'=>$taxonomy]);
+    }
+
     public function store(Request $request){
         //validate
         $validated = $request->validate([
