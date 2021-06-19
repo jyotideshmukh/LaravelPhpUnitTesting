@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use App\Models\Taxonomy;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +17,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::post('/tags', function (Request $request) {
+    $taxonomy = new Taxonomy();
+    $taxonomy->title = $request->input('title');
+    $taxonomy->parent = $request->input('parent');
+    $taxonomy->description = $request->input('description');
+    $taxonomy->save();
+    return 'saved successfuly';
 });
