@@ -20,6 +20,7 @@ class TaxonomyController extends Controller
         $taxonomy->parent = $request->input('parent');
         $taxonomy->description = $request->input('description');
         $taxonomy->save();
+        return redirect()->action([TaxonomyController::class, 'index']);
     }
 
 
