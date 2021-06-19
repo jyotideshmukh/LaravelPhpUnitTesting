@@ -25,5 +25,10 @@ Route::post('/tags', function (Request $request) {
     $taxonomy->parent = $request->input('parent');
     $taxonomy->description = $request->input('description');
     $taxonomy->save();
-    return 'saved successfuly';
+
+});
+
+Route::get('/tags', function (Request $request) {
+    $taxonomies =  Taxonomy::all();
+    return view('index',$taxonomies);
 });

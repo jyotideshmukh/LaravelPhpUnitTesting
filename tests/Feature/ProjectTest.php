@@ -34,5 +34,10 @@ class ProjectTest extends TestCase
         $response->assertStatus(200);
 
         $this->assertDatabaseHas('taxonomies',$taxonomy);
+
+        $response = $this->get('/tags');
+
+        $response->assertSee($taxonomy);
+
     }
 }
