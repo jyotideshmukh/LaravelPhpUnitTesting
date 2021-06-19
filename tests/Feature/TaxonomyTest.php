@@ -2,6 +2,8 @@
 
 namespace Tests\Feature;
 
+use App\Models\Taxonomy;
+use Database\Factories\TaxonomyFactory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
@@ -45,8 +47,12 @@ class TaxonomyTest extends TestCase
      * Adding test for Title required in taxonomy
      */
     public function test_taxonomy_requires_title(){
-
+        //this test get passed as we are sending blank array and it throws title error
         $this->post('/tags',[])->assertSessionHasErrors('title');
+
+        //now checking with factory- overwritten title of factory with blank
+        $taxonomyData = Taxonomy::factory()->raw(['title'=>'']);
+        $this->post('/tags',$taxonomyData)->assertSessionHasErrors('title');
     }
 
     /*
