@@ -11,7 +11,7 @@
             <h3>{{ $taxonomy->title }}</h3>
             <p>{{ $taxonomy->description  }}</p>
         </li>
-    @endforeach;
+    @endforeach
     </ul>
     </body>
 </html>

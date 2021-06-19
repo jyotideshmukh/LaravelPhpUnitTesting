@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Taxonomy;
+use App\Http\Controllers\TaxonomyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/tags', function (Request $request) {
+/*Route::post('/tags', function (Request $request) {
     $taxonomy = new Taxonomy();
     $taxonomy->title = $request->input('title');
     $taxonomy->parent = $request->input('parent');
@@ -31,4 +32,8 @@ Route::post('/tags', function (Request $request) {
 Route::get('/tags', function (Request $request) {
     $taxonomies =  Taxonomy::all();
     return view('index',$taxonomies);
-});
+});*/
+
+Route::get('/tags',[TaxonomyController::class, 'index']);
+
+Route::post('/tags', [TaxonomyController::class, 'store']);

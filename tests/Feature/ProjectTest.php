@@ -37,7 +37,7 @@ class ProjectTest extends TestCase
 
         $response = $this->get('/tags');
 
-        $response->assertSee($taxonomy);
+        $response->assertSee($taxonomy['title']);
 
     }
 }

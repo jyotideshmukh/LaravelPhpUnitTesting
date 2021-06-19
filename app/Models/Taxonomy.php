@@ -11,9 +11,6 @@ class Taxonomy extends Model
 
     protected $fillable = ['title','description','parent'];
 
-    private $title;
-    private $description;
-    private $parent;
 
 
 
