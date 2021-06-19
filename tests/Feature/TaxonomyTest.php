@@ -26,21 +26,28 @@ class TaxonomyTest extends TestCase
     public function test_is_project_tag_systemworking(){
         $this->withExceptionHandling();
 
-        $taxonomy = [
+      //******************************************************/
+        /* checked for post, get , database saving, 200 status*/
+       /* $taxonomy = [
           'title'=>$this->faker->sentence,
           'parent'=>0,
           'description'=>$this->faker->paragraph
         ];
-
-        /* checked for post, get , database saving, 200 status*/
         //$response = $this->post('/tags',$taxonomy);
         //$response->assertStatus(200);
         //$this->assertDatabaseHas('taxonomies',$taxonomy);
         //$response = $this->get('/tags');
         //$response->assertSee($taxonomy['title']);
 
+       //******************************************************/
+        //this fails as system not redirecting- as title blank
+       // $taxonomy = Taxonomy::factory()->raw(['title'=>'']);
+
+        //this will pass as system redirecting
+        $taxonomy = Taxonomy::factory()->raw();
         /*checked for redirecting correctly*/
          $this->post('/tags',$taxonomy)->assertRedirect('/tags');
+        //******************************************************
     }
 
     /*
@@ -59,8 +66,8 @@ class TaxonomyTest extends TestCase
      * Adding test for description not required in taxonomy
      */
 
-    public function test_taxonomy_requires_description(){
+    /*public function test_taxonomy_requires_description(){
 
         $this->post('/tags',[])->assertSessionHasErrors('description');
-    }
+    }*/
 }

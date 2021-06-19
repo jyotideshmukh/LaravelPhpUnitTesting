@@ -20,12 +20,14 @@ class TaxonomyController extends Controller
             'title' => 'required|unique:taxonomies|max:255'
         ]);
 
+
         //persist
         $taxonomy = new Taxonomy();
         $taxonomy->title = $request->input('title');
         $taxonomy->parent = $request->input('parent');
         $taxonomy->description = $request->input('description');
         $taxonomy->save();
+
         //redirect
         return redirect()->action([TaxonomyController::class, 'index']);
     }
