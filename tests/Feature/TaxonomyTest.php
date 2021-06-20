@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Taxonomy;
+use App\Models\User;
 use Database\Factories\TaxonomyFactory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -44,6 +45,7 @@ class TaxonomyTest extends TestCase
        // $taxonomy = Taxonomy::factory()->raw(['title'=>'']);
 
         //this will pass as system redirecting
+        $this->actingAs(User::factory()->create());
         $taxonomy = Taxonomy::factory()->raw();
         /*checked for redirecting correctly*/
          $this->post('/tags',$taxonomy)->assertRedirect('/tags');
@@ -54,6 +56,7 @@ class TaxonomyTest extends TestCase
      * Adding test for Title required in taxonomy
      */
     public function test_taxonomy_requires_title(){
+        $this->actingAs(User::factory()->create());
         //this test get passed as we are sending blank array and it throws title error
         $this->post('/tags',[])->assertSessionHasErrors('title');
 
@@ -82,4 +85,29 @@ class TaxonomyTest extends TestCase
             ->assertSee($taxonomy['title'])
             ->assertSee($taxonomy['description']);
     }
+
+    /**
+     * Check Taxonomy has owner
+     */
+    /*public function test_a_taxonomy_requires_a_owner(){
+        $this->actingAs(User::factory()->create());
+        $taxonomy = Taxonomy::factory()->raw(['owner_id'=>null]);
+        $this->post('/tags',$taxonomy)->assertSessionHasErrors('owner_id');
+    }*/
+
+    /**
+     * Check Taxonomy has authenticated Owner
+     * check if user is authenticated else redirect to login page
+     */
+    public function test_only_authenticated_user_can_post_taxonomy()
+    {
+        $this->withExceptionHandling();
+        $taxonomy = Taxonomy::factory()->raw(['owner_id' => null]);
+        //lets test - before even executing post- it should check authenicated user
+        $this->post('/tags', $taxonomy)->assertRedirect('/login');
+    }
+
+    /*public function test_a_authenticated_users_taxonomies_create(){
+        Auth::user()->projets()->create(Taxonomy::factory()->raw());
+    }*/
 }

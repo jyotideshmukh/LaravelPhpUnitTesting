@@ -36,4 +36,12 @@ Route::get('/tags', function (Request $request) {
 Route::get('/tags/{taxonomy}',[TaxonomyController::class, 'show']);
 Route::get('/tags',[TaxonomyController::class, 'index']);
 
-Route::post('/tags', [TaxonomyController::class, 'store']);
+Route::post('/tags', [TaxonomyController::class, 'store'])->middleware('auth');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

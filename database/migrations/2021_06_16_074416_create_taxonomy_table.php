@@ -16,9 +16,13 @@ class CreateTaxonomyTable extends Migration
         Schema::create('taxonomies', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            //added owner id at the time owner test
+            $table->unsignedBigInteger('owner_id');
             $table->text('description');
             $table->integer('parent');
             $table->timestamps();
+            //added owner id at the time owner test
+            $table->foreign('owner_id')->references('id')->on('users');
         });
     }
 
