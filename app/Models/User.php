@@ -42,6 +42,6 @@ class User extends Authenticatable
     ];
 
     public function taxonomies(){
-        return $this->hasMany(Taxonomy::class);
+        return $this->hasMany(Taxonomy::class,'owner_id');
     }
 }

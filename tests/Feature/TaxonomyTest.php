@@ -25,7 +25,7 @@ class TaxonomyTest extends TestCase
     }*/
 
     public function test_is_project_tag_systemworking(){
-        $this->withExceptionHandling();
+        $this->withoutExceptionHandling();
 
       //******************************************************/
         /* checked for post, get , database saving, 200 status*/
@@ -79,7 +79,7 @@ class TaxonomyTest extends TestCase
      */
 
     public function test_is_taxonomy_created_and_accessible(){
-        $this->withExceptionHandling();
+        $this->withoutExceptionHandling();
         $taxonomy = Taxonomy::factory()->create();
         $this->get('/tags/'.$taxonomy->id)
             ->assertSee($taxonomy['title'])

@@ -12,6 +12,7 @@ class TaxonomyController extends Controller
 
     public function index(){
         $taxonomies =  Taxonomy::all();
+       // Auth::user()->taxonomies;
         return view('index',['taxonomies'=>$taxonomies]);
     }
 
@@ -47,7 +48,7 @@ class TaxonomyController extends Controller
         $taxonomy->save();
        */
         //creating user for authenticated user
-        Auth::user()->projets()->create($validated);
+        Auth::user()->taxonomies()->create($validated);
 
         //redirect
         return redirect()->action([TaxonomyController::class, 'index']);

@@ -9,9 +9,9 @@ class Taxonomy extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title','description','parent'];
+    protected $fillable = ['title','description','parent','children'];
 
-
+    public $children = [];
 
 
     /**
@@ -62,7 +62,10 @@ class Taxonomy extends Model
         $this->parent = $parent;
     }
 
-
+    public function addChildren(Taxonomy $taxonomy) {
+        $taxonomy->setParent($this->id);
+        $this->children[] = $taxonomy;
+    }
 
 
 

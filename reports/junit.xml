@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.132560">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.132560">
+      <testsuite name="Tests\Unit\UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.132560">
+        <testcase name="test_is_user_has_taxonomies" class="Tests\Unit\UserTest" classname="Tests.Unit.UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" line="16" assertions="1" time="0.132560"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
