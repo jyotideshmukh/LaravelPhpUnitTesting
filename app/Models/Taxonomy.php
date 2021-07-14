@@ -68,6 +68,10 @@ class Taxonomy extends Model
     }
 
 
+    public function owner(){
+        $this->belongsTo(User::class);
+    }
+
 
 
 
