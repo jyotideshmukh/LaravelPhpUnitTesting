@@ -80,7 +80,9 @@ class TaxonomyTest extends TestCase
 
     public function test_is_taxonomy_created_and_accessible(){
         $this->withoutExceptionHandling();
+        $this->actingAs(User::factory()->create());
         $taxonomy = Taxonomy::factory()->create();
+       // $this->post('/tags',$taxonomy);
         $this->get('/tags/'.$taxonomy->id)
             ->assertSee($taxonomy['title'])
             ->assertSee($taxonomy['description']);

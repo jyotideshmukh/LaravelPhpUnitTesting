@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1626262018">
-  <project timestamp="1626262018">
+<coverage generated="1626263692">
+  <project timestamp="1626263692">
     <file name="/Users/jyotipawar/sites/tagsystem/app/Console/Kernel.php">
       <class name="App\Console\Kernel" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="6" coveredelements="4"/>
       </class>
       <line num="25" type="method" name="schedule" visibility="protected" complexity="1" crap="2" count="0"/>
       <line num="28" type="stmt" count="0"/>
-      <line num="35" type="method" name="commands" visibility="protected" complexity="1" crap="1" count="1"/>
-      <line num="37" type="stmt" count="1"/>
-      <line num="39" type="stmt" count="1"/>
-      <line num="40" type="stmt" count="1"/>
+      <line num="35" type="method" name="commands" visibility="protected" complexity="1" crap="1" count="5"/>
+      <line num="37" type="stmt" count="5"/>
+      <line num="39" type="stmt" count="5"/>
+      <line num="40" type="stmt" count="5"/>
       <metrics loc="41" ncloc="25" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="3" elements="6" coveredelements="4"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Exceptions/Handler.php">
       <class name="App\Exceptions\Handler" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
       </class>
-      <line num="35" type="method" name="register" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="37" type="stmt" count="0"/>
-      <line num="39" type="stmt" count="0"/>
-      <line num="40" type="stmt" count="0"/>
-      <metrics loc="41" ncloc="26" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      <line num="35" type="method" name="register" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="37" type="stmt" count="4"/>
+      <line num="39" type="stmt" count="4"/>
+      <line num="40" type="stmt" count="4"/>
+      <metrics loc="41" ncloc="26" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="4" coveredelements="4"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Http/Controllers/Auth/ConfirmPasswordController.php">
       <class name="App\Http\Controllers\Auth\ConfirmPasswordController" namespace="global">
@@ -100,24 +100,24 @@
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Http/Controllers/TaxonomyController.php">
       <class name="App\Http\Controllers\TaxonomyController" namespace="global">
-        <metrics complexity="4" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="15" coveredelements="0"/>
+        <metrics complexity="4" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="8" elements="15" coveredelements="10"/>
       </class>
       <line num="13" type="method" name="index" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="14" type="stmt" count="0"/>
       <line num="16" type="stmt" count="0"/>
-      <line num="19" type="method" name="show" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="20" type="stmt" count="0"/>
-      <line num="21" type="stmt" count="0"/>
-      <line num="24" type="method" name="store" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="35" type="stmt" count="0"/>
-      <line num="36" type="stmt" count="0"/>
-      <line num="38" type="stmt" count="0"/>
-      <line num="39" type="stmt" count="0"/>
-      <line num="51" type="stmt" count="0"/>
-      <line num="54" type="stmt" count="0"/>
+      <line num="19" type="method" name="show" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="20" type="stmt" count="1"/>
+      <line num="21" type="stmt" count="1"/>
+      <line num="24" type="method" name="store" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="35" type="stmt" count="2"/>
+      <line num="36" type="stmt" count="2"/>
+      <line num="38" type="stmt" count="1"/>
+      <line num="39" type="stmt" count="1"/>
+      <line num="51" type="stmt" count="1"/>
+      <line num="54" type="stmt" count="1"/>
       <line num="57" type="method" name="storeForUser" visibility="public" complexity="1" crap="2" count="0"/>
       <line num="59" type="stmt" count="0"/>
-      <metrics loc="63" ncloc="41" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="0" elements="15" coveredelements="0"/>
+      <metrics loc="63" ncloc="41" classes="1" methods="4" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="8" elements="15" coveredelements="10"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Http/Kernel.php">
       <class name="App\Http\Kernel" namespace="global">
@@ -127,13 +127,13 @@
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Http/Middleware/Authenticate.php">
       <class name="App\Http\Middleware\Authenticate" namespace="global">
-        <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+        <metrics complexity="2" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="4" coveredelements="2"/>
       </class>
-      <line num="15" type="method" name="redirectTo" visibility="protected" complexity="2" crap="6" count="0"/>
-      <line num="17" type="stmt" count="0"/>
-      <line num="18" type="stmt" count="0"/>
+      <line num="15" type="method" name="redirectTo" visibility="protected" complexity="2" crap="2.15" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="18" type="stmt" count="1"/>
       <line num="20" type="stmt" count="0"/>
-      <metrics loc="21" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="4" coveredelements="0"/>
+      <metrics loc="21" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="2" elements="4" coveredelements="2"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Http/Middleware/EncryptCookies.php">
       <class name="App\Http\Middleware\EncryptCookies" namespace="global">
@@ -214,27 +214,27 @@
       <class name="App\Models\User" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </class>
-      <line num="44" type="method" name="taxonomies" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="45" type="stmt" count="1"/>
+      <line num="44" type="method" name="taxonomies" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="45" type="stmt" count="2"/>
       <metrics loc="47" ncloc="32" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Providers/AppServiceProvider.php">
       <class name="App\Providers\AppServiceProvider" namespace="global">
         <metrics complexity="2" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
       </class>
-      <line num="14" type="method" name="register" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="17" type="stmt" count="1"/>
-      <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="27" type="stmt" count="1"/>
+      <line num="14" type="method" name="register" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="17" type="stmt" count="5"/>
+      <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="27" type="stmt" count="5"/>
       <metrics loc="28" ncloc="18" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Providers/AuthServiceProvider.php">
       <class name="App\Providers\AuthServiceProvider" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </class>
-      <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="26" type="stmt" count="1"/>
-      <line num="29" type="stmt" count="1"/>
+      <line num="24" type="method" name="boot" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="26" type="stmt" count="5"/>
+      <line num="29" type="stmt" count="5"/>
       <metrics loc="30" ncloc="20" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Providers/BroadcastServiceProvider.php">
@@ -251,33 +251,33 @@
       <class name="App\Providers\EventServiceProvider" namespace="global">
         <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </class>
-      <line num="28" type="method" name="boot" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="31" type="stmt" count="1"/>
+      <line num="28" type="method" name="boot" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="31" type="stmt" count="5"/>
       <metrics loc="32" ncloc="22" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
     </file>
     <file name="/Users/jyotipawar/sites/tagsystem/app/Providers/RouteServiceProvider.php">
       <class name="App\Providers\RouteServiceProvider" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="17" coveredelements="15"/>
       </class>
-      <line num="36" type="method" name="boot" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="38" type="stmt" count="1"/>
-      <line num="40" type="stmt" count="1"/>
-      <line num="41" type="stmt" count="1"/>
-      <line num="42" type="stmt" count="1"/>
-      <line num="43" type="stmt" count="1"/>
-      <line num="44" type="stmt" count="1"/>
-      <line num="46" type="stmt" count="1"/>
-      <line num="47" type="stmt" count="1"/>
-      <line num="48" type="stmt" count="1"/>
-      <line num="49" type="stmt" count="1"/>
-      <line num="50" type="stmt" count="1"/>
-      <line num="57" type="method" name="configureRateLimiting" visibility="protected" complexity="2" crap="2.06" count="1"/>
-      <line num="59" type="stmt" count="1"/>
+      <line num="36" type="method" name="boot" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="38" type="stmt" count="5"/>
+      <line num="40" type="stmt" count="5"/>
+      <line num="41" type="stmt" count="5"/>
+      <line num="42" type="stmt" count="5"/>
+      <line num="43" type="stmt" count="5"/>
+      <line num="44" type="stmt" count="5"/>
+      <line num="46" type="stmt" count="5"/>
+      <line num="47" type="stmt" count="5"/>
+      <line num="48" type="stmt" count="5"/>
+      <line num="49" type="stmt" count="5"/>
+      <line num="50" type="stmt" count="5"/>
+      <line num="57" type="method" name="configureRateLimiting" visibility="protected" complexity="2" crap="2.06" count="5"/>
+      <line num="59" type="stmt" count="5"/>
       <line num="60" type="stmt" count="0"/>
-      <line num="61" type="stmt" count="1"/>
-      <line num="62" type="stmt" count="1"/>
+      <line num="61" type="stmt" count="5"/>
+      <line num="62" type="stmt" count="5"/>
       <metrics loc="63" ncloc="38" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="17" coveredelements="15"/>
     </file>
-    <metrics files="27" loc="960" ncloc="617" classes="18" methods="33" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="82" coveredstatements="23" elements="115" coveredelements="30"/>
+    <metrics files="27" loc="960" ncloc="617" classes="18" methods="33" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="82" coveredstatements="36" elements="115" coveredelements="46"/>
   </project>
 </coverage>

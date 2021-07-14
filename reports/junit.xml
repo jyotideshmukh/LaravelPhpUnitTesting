@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.132560">
-    <testsuite name="Unit" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.132560">
-      <testsuite name="Tests\Unit\UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.132560">
-        <testcase name="test_is_user_has_taxonomies" class="Tests\Unit\UserTest" classname="Tests.Unit.UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" line="16" assertions="1" time="0.132560"/>
+  <testsuite name="" tests="6" assertions="12" errors="0" warnings="0" failures="0" skipped="0" time="0.330292">
+    <testsuite name="Unit" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.137074">
+      <testsuite name="Tests\Unit\ExampleTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.002515">
+        <testcase name="test_example" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/ExampleTest.php" line="14" assertions="1" time="0.002515"/>
+      </testsuite>
+      <testsuite name="Tests\Unit\UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.134560">
+        <testcase name="test_is_user_has_taxonomies" class="Tests\Unit\UserTest" classname="Tests.Unit.UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" line="16" assertions="1" time="0.134560"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="4" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.193218">
+      <testsuite name="Tests\Feature\TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" tests="4" assertions="10" errors="0" warnings="0" failures="0" skipped="0" time="0.193218">
+        <testcase name="test_is_project_tag_systemworking" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="27" assertions="2" time="0.076542"/>
+        <testcase name="test_taxonomy_requires_title" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="58" assertions="4" time="0.042008"/>
+        <testcase name="test_is_taxonomy_created_and_accessible" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="81" assertions="2" time="0.044208"/>
+        <testcase name="test_only_authenticated_user_can_post_taxonomy" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="104" assertions="2" time="0.030460"/>
       </testsuite>
     </testsuite>
   </testsuite>

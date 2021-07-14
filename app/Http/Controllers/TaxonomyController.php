@@ -17,7 +17,7 @@ class TaxonomyController extends Controller
     }
 
     public function show(Taxonomy $taxonomy){
-        $taxonomy =  Taxonomy::findOrFail();
+        $taxonomy =  Taxonomy::findOrFail($taxonomy->id);
         return view('show',['taxonomy'=>$taxonomy]);
     }
 
