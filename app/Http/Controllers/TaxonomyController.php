@@ -26,10 +26,7 @@ class TaxonomyController extends Controller
         //dd('we are here- checking auth');
 
         //validate
-       /* $validated = $request->validate([
-            'title' => 'required|unique:taxonomies|max:255',
-            'owner_id' => 'required'
-        ]);*/
+       /* c;*/
 
         //now removed owner_id from required and Owner should be authenticated user
         $validated = $request->validate([

@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="6" assertions="10" errors="1" warnings="0" failures="0" skipped="0" time="0.542637">
-    <testsuite name="Unit" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.010146">
-      <testsuite name="Tests\Unit\ExampleTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.009679">
-        <testcase name="test_example" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/ExampleTest.php" line="14" assertions="1" time="0.009679"/>
+  <testsuite name="" tests="7" assertions="12" errors="1" warnings="0" failures="0" skipped="0" time="0.351501">
+    <testsuite name="Unit" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.139462">
+      <testsuite name="Tests\Unit\ExampleTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.002328">
+        <testcase name="test_example" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/ExampleTest.php" line="14" assertions="1" time="0.002328"/>
       </testsuite>
-      <testsuite name="Tests\Unit\UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.000467">
-        <testcase name="test_is_user_has_taxonomies" class="Tests\Unit\UserTest" classname="Tests.Unit.UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" line="15" assertions="1" time="0.000467"/>
+      <testsuite name="Tests\Unit\UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.137134">
+        <testcase name="test_is_user_has_taxonomies" class="Tests\Unit\UserTest" classname="Tests.Unit.UserTest" file="/Users/jyotipawar/sites/tagsystem/tests/Unit/UserTest.php" line="16" assertions="1" time="0.137134"/>
       </testsuite>
     </testsuite>
-    <testsuite name="Feature" tests="4" assertions="8" errors="1" warnings="0" failures="0" skipped="0" time="0.532491">
-      <testsuite name="Tests\Feature\TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" tests="4" assertions="8" errors="1" warnings="0" failures="0" skipped="0" time="0.532491">
-        <testcase name="test_is_project_tag_systemworking" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="27" assertions="0" time="0.330054">
-          <error type="PHPUnit\Framework\RiskyTestError">Tests\Feature\TaxonomyTest::test_is_project_tag_systemworking
+    <testsuite name="Feature" tests="5" assertions="10" errors="1" warnings="0" failures="0" skipped="0" time="0.212039">
+      <testsuite name="Tests\Feature\TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" tests="5" assertions="10" errors="1" warnings="0" failures="0" skipped="0" time="0.212039">
+        <testcase name="test_is_project_tag_systemworking" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="28" assertions="2" time="0.074261"/>
+        <testcase name="test_taxonomy_requires_title" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="59" assertions="4" time="0.041747"/>
+        <testcase name="test_is_taxonomy_created_and_accessible" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="82" assertions="2" time="0.038687"/>
+        <testcase name="test_only_authenticated_user_can_post_taxonomy" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="105" assertions="2" time="0.027561"/>
+        <testcase name="test_a_authenticated_users_taxonomies_create" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="113" assertions="0" time="0.029783">
+          <error type="PHPUnit\Framework\RiskyTestError">Tests\Feature\TaxonomyTest::test_a_authenticated_users_taxonomies_create
 This test did not perform any assertions
 
-/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php:27</error>
+/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php:113</error>
         </testcase>
-        <testcase name="test_taxonomy_requires_title" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="58" assertions="4" time="0.087400"/>
-        <testcase name="test_is_taxonomy_created_and_accessible" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="81" assertions="2" time="0.080915"/>
-        <testcase name="test_only_authenticated_user_can_post_taxonomy" class="Tests\Feature\TaxonomyTest" classname="Tests.Feature.TaxonomyTest" file="/Users/jyotipawar/sites/tagsystem/tests/Feature/TaxonomyTest.php" line="102" assertions="2" time="0.034122"/>
       </testsuite>
     </testsuite>
   </testsuite>

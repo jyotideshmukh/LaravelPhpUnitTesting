@@ -13,5 +13,7 @@
         </li>
     @endforeach
     </ul>
+
+    <a href="/">Home</a>
     </body>
 </html>

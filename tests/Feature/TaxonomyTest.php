@@ -8,6 +8,7 @@ use Database\Factories\TaxonomyFactory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
+use Illuminate\Support\Facades\Auth;
 
 class TaxonomyTest extends TestCase
 {
@@ -109,7 +110,15 @@ class TaxonomyTest extends TestCase
         $this->post('/tags', $taxonomy)->assertRedirect('/login');
     }
 
-    /*public function test_a_authenticated_users_taxonomies_create(){
-        Auth::user()->projets()->create(Taxonomy::factory()->raw());
+    public function test_a_authenticated_users_taxonomies_create(){
+        $this->actingAs(User::factory()->create());
+        Auth::user()->taxonomies()->create(Taxonomy::factory()->raw());
+    }
+
+    /*public function testClickHome()
+    {
+        $this->visit('/tags')
+            ->click('Home')
+            ->seePageIs('/');
     }*/
 }
